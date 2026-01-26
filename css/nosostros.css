@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    line-height: 1.6;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sombran {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+
+.sombran:hover {
+    background-color: #1e40af;
+}
+
+#flotante {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    background: #3b64ea;
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+    display: none;
+    z-index: 9999;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#icono {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
