@@ -81,7 +81,7 @@ main h3 {
 
 .anim-img {
     width: 400px;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     animation: float 3s ease-in-out infinite;
     transition: transform 0.5s;
