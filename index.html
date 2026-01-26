@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="img/iconofav.png" type="image/png">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Tecnologías JC</title>
+
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-blue-600 text-white">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold">Tecnologias JC</h1>
+            <ul class="flex space-x-0">
+                <li><a href="index.html" class=" sombrai">Inicio</a></li>
+                <li><a href="nosotros.html" class=" sombrai">Nosotros</a></li>
+                <li><a href="productos.html" class=" sombrai">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="container mx-auto p-6">
+        <section class="text-center py-12">
+            <h2 class="text-4xl font-bold mb-4">Soluciones Tecnológicas</h2>
+            <p class="text-lg mb-6">Venta de productos y servicios tecnológicos de alta calidad.</p>
+            <a href="productos.html" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Ver
+                productos</a>
+        </section>
+
+        <div class="max-w-4xl mx-auto mt-10 relative">
+
+            <input type="radio" name="carousel" id="slide1" checked class="hidden">
+            <input type="radio" name="carousel" id="slide2" class="hidden">
+            <input type="radio" name="carousel" id="slide3" class="hidden">
+            <input type="radio" name="carousel" id="slide4" class="hidden">
+            <input type="radio" name="carousel" id="slide5" class="hidden">
+
+            <div class="overflow-hidden w-full">
+                <div class="slides flex transition-transform duration-500">
+                    <img src="img/audifonos.jpg" class="min-w-full object-cover">
+                    <img src="img/celular1.jpg" class="min-w-full object-cover">
+                    <img src="img/celulares.jpg" class="min-w-full object-cover">
+                    <img src="img/tablets.jpg" class="min-w-full object-cover">
+                    <img src="img/parlante.jpg" class="min-w-full object-cover">
+                </div>
+            </div>
+
+
+            <div class="flex justify-center gap-2 mt-4">
+                <label for="slide1" class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer"></label>
+                <label for="slide2" class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer"></label>
+                <label for="slide3" class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer"></label>
+                <label for="slide4" class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer"></label>
+                <label for="slide5" class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer"></label>
+            </div>
+
+        </div>
+
+
+
+        <section class="grid md:grid-cols-3 gap-6 mt-10">
+            <div class="bg-white p-6 rounded shadow fly"
+                data-msg="Garantizamos productos de alta calidad que cumplen con estrictos estándares nacionales e internacionales. Cada artículo es cuidadosamente seleccionado, probado y certificado para asegurar durabilidad, rendimiento y total satisfacción del cliente.">
+                <h3 class="text-xl font-semibold mb-2 titulo">Calidad</h3>
+                <p>Productos certificados y garantizados.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow fly"
+                data-msg="Ofrecemos un soporte técnico profesional y personalizado. Nuestro equipo está disponible para resolver dudas, brindar asesoría y acompañarte antes, durante y después de tu compra, asegurando una experiencia confiable.">
+                <h3 class="text-xl font-semibold mb-2 titulo">Soporte</h3>
+                <p>Atención personalizada.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow fly"
+                data-msg="Apostamos por la innovación constante, incorporando nuevas tecnologías y soluciones modernas que optimizan procesos, mejoran la eficiencia y mantienen a nuestros clientes siempre a la vanguardia del mercado.">
+                <h3 class="text-xl font-semibold mb-2 titulo">Innovación</h3>
+                <p>Vanguardia tecnológica.</p>
+            </div>
+        </section>
+
+
+        <div id="flotante">
+            <span id="icono"></span>
+            <span id="texto"></span>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+        <p>&copy; 2026 Tecnologias JC</p>
+    </footer>
+
+    <script src="js/index.js" defer></script>
+</body>
+
+</html>
