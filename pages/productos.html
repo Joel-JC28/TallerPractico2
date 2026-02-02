@@ -2,14 +2,15 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="../img/iconofav.png" type="image/png">
     <link rel="stylesheet" href="../css/productos.css">
-
-
     <title>Tecnologías JC</title>
+
+
 
 </head>
 
@@ -17,20 +18,23 @@
 
 
     <header class="bg-blue-600 text-white">
-        <nav class="container mx-auto flex justify-between items-center p-4">
+        <nav class="container mx-auto flex flex-wrap md:flex-nowrap justify-between items-center p-4 gap-4">
             <h1 class="text-2xl font-bold">Tecnologias JC</h1>
             <ul class="flex space-x-4">
                 <li><a href="../index.html" class=" sombra">Inicio</a></li>
                 <li><a href="../pages/nosotros.html" class=" sombra">Nosotros</a></li>
                 <li><a href="../pages/productos.html" class=" sombra">Productos</a></li>
+                <button id="btnCarrito" class="bg-blue-700 px-4 py-2 rounded">
+                    🛒 <span id="contador">0</span>
+                </button>
             </ul>
         </nav>
     </header>
 
 
     <main class="container mx-auto p-6">
-        <h2 class="text-3xl font-bold mb-6">Nuestros Productos</h2>
 
+        <h2 class="text-3xl font-bold mb-6">Nuestros Productos</h2>
 
         <section class="grid md:grid-cols-3 gap-6">
             <article class="card bg-white p-6 rounded shadow hover:bg-gray-200">
@@ -55,76 +59,52 @@
             </article>
         </section>
 
+        <h2 class="text-3xl font-bold mb-6">Catálogo de Productos</h2>
 
-        <h3 class="text-2xl font-bold mt-10 mb-4">Catálogo de Productos</h3>
-        <section class="overflow-x-auto flex justify-center">
-            <table class="tabla-productos bg-white rounded shadow">
-                <thead class="bg-blue-600 text-white">
-                    <tr>
-                        <th class="p-3 text-left rounded hover:bg-blue-700">Imagen</th>
-                        <th class="p-3 text-left rounded hover:bg-blue-700">Producto</th>
-                        <th class="p-3 text-left rounded hover:bg-blue-700">Descripción</th>
-                        <th class="p-3 text-left rounded hover:bg-blue-700">Precio</th>
-                    </tr>
-                </thead>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-                <tbody class="divide-y">
-                    <tr class="rounded hover:bg-gray-200">
-                        <td class="p-3">
-                            <img src="../img/core i5.jpg" alt="Laptop" class="w-24 rounded">
-                        </td>
-                        <td class="p-3 font-semibold">Laptop HP Core i5</td>
-                        <td class="p-3">8GB RAM, 512GB SSD</td>
-                        <td class="p-3 font-bold">$850</td>
-                    </tr>
+            <section id="productos" class="md:col-span-3 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            </section>
+            
+            <aside id="panelCarrito" class="hidden fixed right-6 top-20 w-80 bg-white p-4 rounded-xl shadow-2xl z-50">
 
-                    <tr class="rounded hover:bg-gray-200">
-                        <td class="p-3">
-                            <img src="../img/celular3d.jpg" alt="Celular" class="w-24 rounded">
-                        </td>
-                        <td class="p-3 font-semibold">Smartphone Samsung</td>
-                        <td class="p-3">128GB, cámara avanzada</td>
-                        <td class="p-3 font-bold">$420</td>
-                    </tr>
+                <h3 class="text-lg font-bold mb-3">Carrito</h3>
 
-                    <tr class="rounded hover:bg-gray-200">
-                        <td class="p-3">
-                            <img src="../img/tablet3d.avif" alt="Tablet" class="w-24 rounded">
-                        </td>
-                        <td class="p-3 font-semibold">Tablet Lenovo</td>
-                        <td class="p-3">Pantalla 10 pulgadas</td>
-                        <td class="p-3 font-bold">$280</td>
-                    </tr>
+                <ul id="listaCarrito"></ul>
 
-                    <tr class="rounded hover:bg-gray-200">
-                        <td class="p-3">
-                            <img src="../img/Audífono3d.jpg" alt="Audífonos" class="w-24 rounded">
-                        </td>
-                        <td class="p-3 font-semibold">Audífonos Bluetooth</td>
-                        <td class="p-3">Cancelación de ruido</td>
-                        <td class="p-3 font-bold">$60</td>
-                    </tr>
+                <p class="font-bold mt-4">
+                    Total: $<span id="total">0</span>
+                </p>
 
-                    <tr class="rounded hover:bg-gray-200">
-                        <td class="p-3">
-                            <img src="../img/parlante3d.jpg" alt="Parlante" class="w-24 rounded">
-                        </td>
-                        <td class="p-3 font-semibold">Parlante JBL</td>
-                        <td class="p-3">Resistente al agua</td>
-                        <td class="p-3 font-bold">$95</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+                <div class="Acciones">
+                    <button id="Finalizar" class="btnFinalizar">
+                        Finalizar compra
+                    </button>
+
+                    <button id="vaciar">
+                        Vaciar carrito
+                    </button>
+
+                </div>
+
+
+
+
+            </aside>
+
+        </div>
 
     </main>
-
+    <div id="exito" class="exito hidden">
+        Compra realizada con éxito
+    </div>
 
     <footer class="bg-gray-800 text-white text-center p-4 mt-10">
         <p>&copy; 2026 Tecnologias JC</p>
     </footer>
 
 
+    <script src="../js/productos.js"></script>
 </body>
 
 </html>

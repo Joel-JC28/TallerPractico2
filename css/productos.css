@@ -1,7 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
-
 
 section {
   display: grid;
@@ -9,28 +8,12 @@ section {
   gap: 1.5rem;
 }
 
-
 article {
   transition: transform 0.3s ease;
 }
 
-
 article:hover {
   transform: scale(1.05);
-}
-
-
-@media (max-width: 1024px) {
-  section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-
-@media (max-width: 640px) {
-  section {
-    grid-template-columns: 1fr;
-  }
 }
 
 main h2 {
@@ -75,18 +58,156 @@ main h3 {
   padding: 12px 24px;
   border-radius: 8px;
 }
+
 .sombra:hover {
   background-color: #1e40af;
 }
 
 .anim-img {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    animation: float 3s ease-in-out infinite;
-    transition: transform 0.5s;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.5s;
 }
 
 .card:hover .anim-img {
-    transform: translateY(-10px) scale(1.05);
+  transform: translateY(-10px) scale(1.05);
+}
+
+
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#panelCarrito {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#panelCarrito.hidden {
+  transform: translateX(120%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+#panelCarrito:not(.hidden) {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#listaCarrito li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+
+
+#listaCarrito button {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#listaCarrito button:hover {
+  color: red;
+  transform: scale(1.15);
+}
+
+
+
+#panelCarrito ul {
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+
+
+#contador {
+  background: #44ef4a;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  margin-left: 4px;
+}
+
+
+.sombra:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+#Finalizar {
+  margin-top: 0.75rem;
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 0;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+#Finalizar:hover {
+
+  background-color: #040f33;
+}
+
+#vaciar {
+  margin-top: 0.75rem;
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 0;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+
+
+}
+
+#vaciar:hover {
+  background-color: red;
+}
+
+.Acciones {
+  display: flex;
+  gap: 0.4rem;
+  margin: 0.75rem;
+
+}
+
+.exito {
+  position: fixed;
+  top: 10%;
+  left: 80%;
+  background-color: rgb(70, 105, 193);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(15, 212, 25, 0.25);
+  opacity: 0;
+  transform: translate(-20%, -20%);
+  transition: .3s;
+  z-index: 9999;
+}
+
+.exito.show {
+  opacity: 1;
+  transform: translateY(0);
 }

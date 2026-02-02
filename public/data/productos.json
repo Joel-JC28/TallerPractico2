@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nombre": "Laptop Gamer",
+        "precio": 1200,
+        "imagen": "https://cnnespanol.cnn.com/wp-content/uploads/2021/11/laptop-gamer-amd.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Consola PS5",
+        "precio": 750,
+        "imagen": "https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc5/PS5ProconsolewithDualSensecontroller.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Teclado Mecánico RGB",
+        "precio": 90,
+        "imagen": "https://orbitececuador.com/wp-content/uploads/2024/08/TECLADO-MECANICO-REDRAGON-MITRA-K551-RGB-V2.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Mouse Gamer RGB",
+        "precio": 45,
+        "imagen": "https://images.unsplash.com/photo-1629429407759-01cd3d7cfb38?w=400"
+    },
+    {
+        "id": 5,
+        "nombre": "Monitor 24'' Full HD",
+        "precio": 210,
+        "imagen": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=400"
+    },
+    {
+        "id": 6,
+        "nombre": "Auriculares Gaming",
+        "precio": 65,
+        "imagen": "https://i0.wp.com/wortenes.wpcomstaging.com/wp-content/uploads/2025/09/Mejores-auriculares-Gaming.webp?fit=624%2C351&ssl=1"
+    },
+    {
+        "id": 7,
+        "nombre": "Silla Gamer Ergonómica",
+        "precio": 180,
+        "imagen": "https://gamersecuador.store/wp-content/uploads/2024/07/web_mp_n.png"
+    },
+    {
+        "id": 8,
+        "nombre": "Tablet Android 10''",
+        "precio": 300,
+        "imagen": "https://www.cyberoferta.pe/wp-content/uploads/2022/09/TABLET-LENOVO-TAB-M10-600x600.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Smartphone 5G",
+        "precio": 680,
+        "imagen": "https://m.media-amazon.com/images/I/51MuoEIKJ6S._AC_UF350,350_QL80_.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Disco SSD 1TB",
+        "precio": 130,
+        "imagen": "https://acosa.com.hn/wp-content/uploads/2022/12/E100-A4-recto.webp"
+    },
+    {
+        "id": 11,
+        "nombre": "Memoria RAM 16GB",
+        "precio": 85,
+        "imagen": "https://ae01.alicdn.com/kf/S468bb13d1d7e406cb4ec8f621761e0a6H/Kingston-DDR4-RAM-32GB-16GB-8GB-4GB-Memoria-3200MHz-2666-2400-2133MHz-RAM-de-escritorio-1.jpg"
+    },
+    {
+        "id": 12,   
+        "nombre": "Webcam HD",
+        "precio": 55,
+        "imagen": "https://www.tecnovo.com.ec/web/image/product.product/947/image_1024/C%C3%A1mara%20Web%20MICROSOFT%20LifeCam%20HD-3000%20720p%20USB?unique=0fc93f5"
+    }
+]
