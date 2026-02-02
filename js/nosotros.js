@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     images.forEach(function (img) {
         img.addEventListener("mouseenter", function () {
             const card = img.closest(".fly");
-            text.textContent = card.dataset.msg;
+            text.textContent = card.getAttribute(`data-msg`);
 
             if (img.alt === "Misión") icon.textContent = "🎯";
             if (img.alt === "Visión") icon.textContent = "👁️";
