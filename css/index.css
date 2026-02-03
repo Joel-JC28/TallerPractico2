@@ -94,3 +94,15 @@ nav ul {
     margin-bottom: 8px;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+
+}
